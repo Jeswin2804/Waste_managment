@@ -28,7 +28,7 @@ namespace connection_class
         protected void Button1_Click(object sender, EventArgs e)
         {
             string con;
-            con = ConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;//using connection string in web config
+            con = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;//using connection string in web config
             SqlConnection connection = new SqlConnection(con);
             connection.Open();
             SqlCommand sqlCommand = new SqlCommand("sp_insert", connection);

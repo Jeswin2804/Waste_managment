@@ -21,23 +21,12 @@ namespace connection_class
             if (!IsPostBack)
             {
                 Bindgrind();
-
-                con = ConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;
-                SqlConnection con2 = new SqlConnection(con);
-                con2.Open();
-                SqlCommand cmd = new SqlCommand("spSelect_name", con2);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@name", "study 1");
-                SqlDataReader rd = cmd.ExecuteReader();
-                rd.Read();
-                Label1.Text = rd[1].ToString();
-                rd.Close();
             }
         }
-
+        //databind
         protected void Bindgrind()
         {
-            con = ConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;
+            con = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;
             SqlConnection connection = new SqlConnection(con);
             connection.Open();
             SqlCommand cmd = new SqlCommand("select_details", connection);
@@ -49,14 +38,14 @@ namespace connection_class
             GridView1.DataSource = ds;
             GridView1.DataBind();
         }
-
+        //paging
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             GridView1.PageIndex = e.NewPageIndex;
             GridView1.DataSource = ViewState["paging"];
             GridView1.DataBind();
         }
-
+        //sorting
         protected SortDirection CurrentSortDirection
         {
             get
@@ -72,6 +61,7 @@ namespace connection_class
                 ViewState["sortDirection"] = value;
             }
         }
+        //sorting
         protected void GridView1_Sorting(object sender, GridViewSortEventArgs e)
         {
             string ColumnTosort = e.SortExpression;

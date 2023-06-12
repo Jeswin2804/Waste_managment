@@ -23,7 +23,7 @@ namespace connection_class
         }
         private SqlConnection connection()
         {
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["localConnection"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString);
             con.Open();
             return con;
         }

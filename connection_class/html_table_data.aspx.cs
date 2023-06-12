@@ -18,7 +18,7 @@ namespace connection_class
         {
             if (!IsPostBack)
             {
-                string connection = ConfigurationManager.ConnectionStrings["localConnection"].ConnectionString;
+                string connection = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;
                 SqlConnection con = new SqlConnection(connection);
                 con.Open();
                 SqlCommand cmd = new SqlCommand("spSelectall", con);

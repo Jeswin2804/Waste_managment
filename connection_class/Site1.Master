@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="connection_class.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 219px;
+        }
+
+        .panel-container {
+            display: flex;
+        }
+
+        .panel {
+            float: left;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .menu {
+            height: 96vh;
+            padding: 10px;
+        }
+
+            .menu  li {
+                position: relative;
+                padding: 10px;
+                border-width: 0px 1px 1px 0px;
+                border-color: #dbdbdb;
+                border-style: solid;
+                border-radius: 0 0 5px 0;
+            }
+
+                .menu  li:hover {
+                    box-shadow: 4px 8px 9px 0px #b5b5b5;
+                } 
+                
+                .active {
+                    box-shadow: 4px 8px 9px 0px #b5b5b5;
+                }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="panel-container">
+        </div>
+        <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Left" CssClass="panel menu">
+            <asp:Menu runat="server">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/grid_manual_paging.aspx" Text="manual paging" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Grid_paging.aspx" Text="grid paging" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Grid_Search.aspx" Text="grid search" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/html_table_data.aspx" Text="HTMl table" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/js_registration_validation.aspx" Text="js registration validation" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/login.aspx" Text="login" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Wep_method_dropdownlist.aspx" Text="Web method dropdownlist" Selectable="true"></asp:MenuItem>
+                </Items>
+                <StaticSelectedStyle CssClass="active" />
+            </asp:Menu>
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" HorizontalAlign="Left" CssClass="panel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </form>
+</body>
+</html>

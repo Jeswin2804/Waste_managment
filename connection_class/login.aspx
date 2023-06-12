@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="connection_class.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="connection_class.login" MasterPageFile="~/Site1.Master" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -20,10 +16,7 @@
             height: 23px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
+    <div>
         </div>
         <table class="auto-style1">
             <tr>
@@ -53,7 +46,6 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:detailsConnectionString %>" ProviderName="<%$ ConnectionStrings:detailsConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [login]"></asp:SqlDataSource>
-    </form>
-</body>
-</html>
+       
+    
+</asp:Content>
