@@ -27,7 +27,7 @@
             padding: 10px;
         }
 
-            .menu  li {
+            .menu li {
                 position: relative;
                 padding: 10px;
                 border-width: 0px 1px 1px 0px;
@@ -36,13 +36,13 @@
                 border-radius: 0 0 5px 0;
             }
 
-                .menu  li:hover {
-                    box-shadow: 4px 8px 9px 0px #b5b5b5;
-                } 
-                
-                .active {
+                .menu li:hover {
                     box-shadow: 4px 8px 9px 0px #b5b5b5;
                 }
+
+        .active {
+            box-shadow: 4px 8px 9px 0px #b5b5b5;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +59,7 @@
                     <asp:MenuItem NavigateUrl="~/js_registration_validation.aspx" Text="js registration validation" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/login.aspx" Text="login" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Wep_method_dropdownlist.aspx" Text="Web method dropdownlist" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

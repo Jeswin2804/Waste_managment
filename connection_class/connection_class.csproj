@@ -89,15 +89,20 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="code.jquery.com_jquery-3.7.0.js" />
     <Content Include="grid_manual_paging.aspx" />
     <Content Include="Grid_paging.aspx" />
     <Content Include="Grid_Search.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="jquery-2.2.4.js" />
+    <Content Include="jquery.validate.js" />
     <Content Include="js_registration_validation.aspx" />
     <Content Include="login.aspx" />
     <Content Include="validation.js" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
+    <Content Include="jQuery.aspx" />
+    <Content Include="JqueryValidation.aspx" />
     <Content Include="Wep_method_dropdownlist.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +162,20 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="jQuery.aspx.cs">
+      <DependentUpon>jQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jQuery.aspx.designer.cs">
+      <DependentUpon>jQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JqueryValidation.aspx.cs">
+      <DependentUpon>JqueryValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JqueryValidation.aspx.designer.cs">
+      <DependentUpon>JqueryValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Wep_method_dropdownlist.aspx.cs">
       <DependentUpon>Wep_method_dropdownlist.aspx</DependentUpon>
