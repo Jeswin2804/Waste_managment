@@ -1,7 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="connection_class.WebForm3" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="~/JqueryValidation.aspx.cs" Inherits="connection_class.WebForm3" MasterPageFile="~/Site1.Master" %>
 
-<html>
-<head>
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
     <title>jquery</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
@@ -45,7 +45,6 @@
             function btn_submit() {
                 var start_date = document.getElementById("#start-date").value;
                 var end_date = document.getElementById("#end-date").value;
-
                 var stDate = new Date(start_date);
                 var enDate = new Date(end_date);
                 var compDate = enDate - stDate;
@@ -69,45 +68,43 @@
         }
 
     </script>
-</head>
-<body>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <form id="myForm">
-        Name:
-        <input type="text" id="name" name="name" />
-        <br />
-        Email:
-        <input type="email" id="email" name="email" />
-        <br />
-        Password:
+         Name:
+         <input type="text" id="name" name="name" />
+         <br />
+         Email:
+         <input type="email" id="email" name="email" />
+         <br />
+         Password:
          <input type="Password" id="Password" name="Password" />
-        <br />
-        Confirm Password
+         <br />
+         Confirm Password
          <input type="password" id="password" name="password" />
 
-        <br />
-        <input type="date" id="start-date" name="start-date" />
-        <br />
-        <input type="date" id="end-date" name="end-date" />
-        <br />
-        <input type="submit" value="Submit" OnClientClick="btn_submit()"/>
+         <br />
+         <input type="date" id="start-date" name="start-date" />
+         <br />
+         <input type="date" id="end-date" name="end-date" />
+         <br />
+         <input type="submit" value="Submit" OnClientClick="btn_submit()"/>
     </form>
-</body>
-</html>
+    </asp:Content>--%>
 
 
 
 
 
-
-<%--<asp:Content ContentPlaceHolderID="head" runat="server">
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
             $validator.addMethod('strongPassword', function (value, element) {
 
             })
-            $("#myForm").validate({
+            $("#form1").validate({
                 rules: {
                     name: {
                         required: true
@@ -141,7 +138,7 @@
         });
     </script>
 </asp:Content>
-<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
     <div>
           Name:
         <input type="text" id="name" name="name" />
@@ -155,4 +152,5 @@
            <input type="password" id="re_password" name="re_password" />
         <input type="submit" value="Submit" />
     </div>
-</asp:Content>--%>
+
+</asp:Content>

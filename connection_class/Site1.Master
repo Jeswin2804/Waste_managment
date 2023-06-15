@@ -50,6 +50,8 @@
         <div class="panel-container">
         </div>
         <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Left" CssClass="panel menu">
+           
+
             <asp:Menu runat="server">
                 <Items>
                     <asp:MenuItem NavigateUrl="~/grid_manual_paging.aspx" Text="manual paging" Selectable="true"></asp:MenuItem>
@@ -59,7 +61,9 @@
                     <asp:MenuItem NavigateUrl="~/js_registration_validation.aspx" Text="js registration validation" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/login.aspx" Text="login" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Wep_method_dropdownlist.aspx" Text="Web method dropdownlist" Selectable="true"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/WebForm6.aspx" Text="WEB Method (SRIPT MANAGER)" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/Web_method.aspx" Text="WEB Method web Services" Selectable="true"></asp:MenuItem>
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

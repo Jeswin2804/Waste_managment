@@ -98,14 +98,28 @@
     <Content Include="jquery.validate.js" />
     <Content Include="js_registration_validation.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="Page_Method.aspx" />
     <Content Include="validation.js" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
     <Content Include="jQuery.aspx" />
     <Content Include="JqueryValidation.aspx" />
-    <Content Include="Wep_method_dropdownlist.aspx" />
+    <Content Include="Student.asmx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="WebService2.asmx" />
+    <Content Include="Web_method.aspx" />
+    <Content Include="Webmethod_demo.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Countries.cs" />
+    <Compile Include="Page_Method.aspx.cs">
+      <DependentUpon>Page_Method.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page_Method.aspx.designer.cs">
+      <DependentUpon>Page_Method.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs" />
     <Compile Include="grid_manual_paging.aspx.cs">
       <DependentUpon>grid_manual_paging.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,12 +191,34 @@
     <Compile Include="JqueryValidation.aspx.designer.cs">
       <DependentUpon>JqueryValidation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Wep_method_dropdownlist.aspx.cs">
-      <DependentUpon>Wep_method_dropdownlist.aspx</DependentUpon>
+    <Compile Include="Student.asmx.cs">
+      <DependentUpon>Student.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Wep_method_dropdownlist.aspx.designer.cs">
-      <DependentUpon>Wep_method_dropdownlist.aspx</DependentUpon>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService2.asmx.cs">
+      <DependentUpon>WebService2.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web_method.aspx.cs">
+      <DependentUpon>Web_method.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_method.aspx.designer.cs">
+      <DependentUpon>Web_method.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webmethod_demo.aspx.cs">
+      <DependentUpon>Webmethod_demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webmethod_demo.aspx.designer.cs">
+      <DependentUpon>Webmethod_demo.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
