@@ -64,6 +64,9 @@
                      <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/WebForm6.aspx" Text="WEB Method (SRIPT MANAGER)" Selectable="true"></asp:MenuItem>
                      <asp:MenuItem NavigateUrl="~/Web_method.aspx" Text="WEB Method web Services" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/Page_Method.aspx" Text="Page Method " Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/iframe.aspx" Text="iframe" Selectable="true"></asp:MenuItem>
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

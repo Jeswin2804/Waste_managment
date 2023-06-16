@@ -1,11 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Page_Method.aspx.cs" Inherits="connection_class.Page_Method" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Page_Method.aspx.cs" Inherits="connection_class.Page_Method"  MasterPageFile="~/Site1.Master"%>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" >
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
             $.ajax({
@@ -16,39 +12,68 @@
                 dataType: "json",
                 success: function (res) {
                     var list = res.d;
-                    console.log(list)
+                    console.log(list);
                     var dropdownlist = $("[id*=DropDownList1]");
+
                     dropdownlist.empty();
                     $.each(list, function (i, item) {
                         dropdownlist.append($('<option>', {
                             text: item.Value,
-                           Value: item.Text
+                            value: item.Text
                         }));
                     });
-                  },
+                },
                 failure: function (res) {
-                    console.log(res)
+                    console.log(res);
                 }
-             })
-        })
-        let change = (country) => {
+            });
+
+        });
+        let getData = () => {
+            var selected = document.getElementById('<%= DropDownList1.ClientID %>').value;
+            console.log(selected);
+
+            var requestData = {
+                country: selected
+            };
+
             $.ajax({
                 type: "POST",
                 url: "Page_Method.aspx/getCountry",
-                data: JSON.stringify({ country: country }),
-                
-            })
-        }
+                data: JSON.stringify(requestData),
+                contentType: "application/json;charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    var list = response.d;
+                    var dropdownCities = $("[id*=DropDownList2]");
+                    dropdownCities.empty();
+                    $.each(list, function (i, item) {
+                        dropdownCities.append($('<option>', {
+                            text: item.Value,
+                            value: item.Text
+                        }));
+                    });
+                },
+                error: function (res) {
+                    console.log("not success");
+                }
+            });
+        };
+
+
+
 
     </script>
-</head>
-<body>
-    <form id="form1" runat="server">
+    </asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+   
         <div>
-            <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"  AutoPostBack="false" runat="server"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" onchange="getData()" AutoPostBack="false" runat="server"></asp:DropDownList>
             <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" runat="server"></asp:DropDownList>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
         </div>
-    </form>
-</body>
-</html>
+
+
+</asp:Content>

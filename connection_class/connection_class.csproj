@@ -89,16 +89,19 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="cascading _dropDown.aspx" />
     <Content Include="code.jquery.com_jquery-3.7.0.js" />
     <Content Include="grid_manual_paging.aspx" />
     <Content Include="Grid_paging.aspx" />
     <Content Include="Grid_Search.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="iframe.aspx" />
     <Content Include="jquery-2.2.4.js" />
     <Content Include="jquery.validate.js" />
     <Content Include="js_registration_validation.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Page_Method.aspx" />
+    <Content Include="Page_method_try.aspx" />
     <Content Include="validation.js" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
@@ -111,13 +114,34 @@
     <Content Include="Webmethod_demo.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cascading _dropDown.aspx.cs">
+      <DependentUpon>cascading _dropDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cascading _dropDown.aspx.designer.cs">
+      <DependentUpon>cascading _dropDown.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Countries.cs" />
+    <Compile Include="iframe.aspx.cs">
+      <DependentUpon>iframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iframe.aspx.designer.cs">
+      <DependentUpon>iframe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Page_Method.aspx.cs">
       <DependentUpon>Page_Method.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Page_Method.aspx.designer.cs">
       <DependentUpon>Page_Method.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page_method_try.aspx.cs">
+      <DependentUpon>Page_method_try.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page_method_try.aspx.designer.cs">
+      <DependentUpon>Page_method_try.aspx</DependentUpon>
     </Compile>
     <Compile Include="student.cs" />
     <Compile Include="grid_manual_paging.aspx.cs">

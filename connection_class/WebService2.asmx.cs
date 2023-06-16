@@ -25,11 +25,11 @@ namespace connection_class
         public class Customer
         {
             public string Value { get; set; }
-            public string Text { get; set; }
+           
         }
 
         [WebMethod]
-        
+       
 
         public List<Customer> GetCustomers()
         {
@@ -43,10 +43,9 @@ namespace connection_class
             SqlDataReader reader = cmd.ExecuteReader();
              while (reader.Read())
             {
-                customers.Add(new Customer() { Value = reader.GetValue(0).ToString(), Text=reader.GetValue(1).ToString() });
+                customers.Add(new Customer() { Value = reader.GetValue(0).ToString()});
             }
-            
-
+ 
             return customers;
         }
     }
