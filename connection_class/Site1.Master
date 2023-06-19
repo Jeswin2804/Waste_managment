@@ -67,6 +67,7 @@
                      <asp:MenuItem NavigateUrl="~/Page_Method.aspx" Text="Page Method " Selectable="true"></asp:MenuItem>
                      <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
                      <asp:MenuItem NavigateUrl="~/iframe.aspx" Text="iframe" Selectable="true"></asp:MenuItem>
+                       <asp:MenuItem NavigateUrl="~/date_time_validation.aspx" Text="date validation" Selectable="true"></asp:MenuItem>
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

@@ -89,6 +89,7 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="AutoCompleteTextBox.aspx" />
     <Content Include="cascading _dropDown.aspx" />
     <Content Include="code.jquery.com_jquery-3.7.0.js" />
     <Content Include="grid_manual_paging.aspx" />
@@ -102,6 +103,8 @@
     <Content Include="login.aspx" />
     <Content Include="Page_Method.aspx" />
     <Content Include="Page_method_try.aspx" />
+    <Content Include="pngwing.com.png" />
+    <Content Include="task_1.aspx" />
     <Content Include="validation.js" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
@@ -109,11 +112,19 @@
     <Content Include="JqueryValidation.aspx" />
     <Content Include="Student.asmx" />
     <Content Include="WebForm6.aspx" />
+    <Content Include="date_time_validation.aspx" />
     <Content Include="WebService2.asmx" />
     <Content Include="Web_method.aspx" />
     <Content Include="Webmethod_demo.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoCompleteTextBox.aspx.cs">
+      <DependentUpon>AutoCompleteTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteTextBox.aspx.designer.cs">
+      <DependentUpon>AutoCompleteTextBox.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cascading _dropDown.aspx.cs">
       <DependentUpon>cascading _dropDown.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,12 +230,26 @@
       <DependentUpon>Student.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="task_1.aspx.cs">
+      <DependentUpon>task_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="task_1.aspx.designer.cs">
+      <DependentUpon>task_1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm6.aspx.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm6.aspx.designer.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="date_time_validation.aspx.cs">
+      <DependentUpon>date_time_validation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="date_time_validation.aspx.designer.cs">
+      <DependentUpon>date_time_validation.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService2.asmx.cs">
       <DependentUpon>WebService2.asmx</DependentUpon>
