@@ -11,7 +11,7 @@ namespace connection_class
 {
 
 
-    public partial class AutoCompleteTextBox
+    public partial class popupWindow
     {
     }
 }

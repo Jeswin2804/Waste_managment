@@ -25,6 +25,7 @@ namespace connection_class
         public class Customer
         {
             public string Value { get; set; }
+            public string Text { get; set; }
            
         }
 
@@ -43,7 +44,7 @@ namespace connection_class
             SqlDataReader reader = cmd.ExecuteReader();
              while (reader.Read())
             {
-                customers.Add(new Customer() { Value = reader.GetValue(0).ToString()});
+                customers.Add(new Customer() { Value = reader.GetValue(0).ToString(),Text= reader.GetValue(1).ToString()});
             }
  
             return customers;

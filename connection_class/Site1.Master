@@ -60,14 +60,17 @@
                     <asp:MenuItem NavigateUrl="~/html_table_data.aspx" Text="HTMl table" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/js_registration_validation.aspx" Text="js registration validation" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/login.aspx" Text="login" Selectable="true"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/Wep_method_dropdownlist.aspx" Text="Web method dropdownlist" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/WebForm6.aspx" Text="WEB Method (SRIPT MANAGER)" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/Web_method.aspx" Text="WEB Method web Services" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/Page_Method.aspx" Text="Page Method " Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/iframe.aspx" Text="iframe" Selectable="true"></asp:MenuItem>
-                       <asp:MenuItem NavigateUrl="~/date_time_validation.aspx" Text="date validation" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Web_method.aspx" Text="WEB Method web Services" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Page_Method.aspx" Text="Page Method " Selectable="true"></asp:MenuItem>
+                   <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/iframe.aspx" Text="iframe" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/date_time_validation.aspx" Text="date validation" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/AutoCompleteTextBox.aspx" Text="Auto suggestion" Selectable="true"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/update_panel.aspx" Text="Update Panel" Selectable="true"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Callback.aspx" Text="Callback" Selectable="true"></asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/popupWindow.aspx" Text="popup-window" Selectable="true"></asp:MenuItem>
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

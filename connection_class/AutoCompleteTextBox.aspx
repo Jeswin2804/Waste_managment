@@ -7,9 +7,9 @@
 
     <script>
         $(document).ready(function () {
-            $("#TextBox1").autocomplete({
+            $("#tags").autocomplete({
                 source: function (req, res) {
-                    var parameter = { Name: $('#TextBox1').val() };
+                    var parameter = { Name: $('#tags').val() };
                     $.ajax({
                         url: "AutoCompleteTextBox.aspx/getNames",
                         data: JSON.stringify(parameter),
@@ -30,14 +30,14 @@
                         }
                     });
                 },
-                minLength: 2
+                minLength: 3
             });
         });
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-    <br />
-    <br />
+   <div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
 </asp:Content>

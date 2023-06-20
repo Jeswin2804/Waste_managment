@@ -101,9 +101,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
-            $validator.addMethod('strongPassword', function (value, element) {
-
+            $.validator.addMethod("stromgPassword", function (value, element) {
+                return $('')
             })
+
+            
+
+
             $("#form1").validate({
                 rules: {
                     name: {
@@ -116,7 +120,11 @@
                     password: {
                         required: true,
                         strongPassword: true
+                    },
+                    Password: {
+                        required: true,
                     }
+
                 },
                 messages: {
                     name: {
@@ -139,7 +147,7 @@
     </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
-    <div>
+    <div id="">
           Name:
         <input type="text" id="name" name="name" />
         <br />
@@ -148,8 +156,10 @@
         <br />
         Password:
          <input type="Password" id="Password" name="Password" />
+        <br />
         Confirm Password
            <input type="password" id="re_password" name="re_password" />
+        <br />
         <input type="submit" value="Submit" />
     </div>
 

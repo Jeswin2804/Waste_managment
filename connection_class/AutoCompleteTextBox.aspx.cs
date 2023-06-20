@@ -15,7 +15,7 @@ namespace connection_class
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            getNames("G");
+           
         }
         [WebMethod]
         public static List<String> getNames(string Name)

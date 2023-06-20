@@ -85,12 +85,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="approved.png" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="AutoCompleteTextBox.aspx" />
     <Content Include="cascading _dropDown.aspx" />
+    <Content Include="checked.png" />
     <Content Include="code.jquery.com_jquery-3.7.0.js" />
     <Content Include="grid_manual_paging.aspx" />
     <Content Include="Grid_paging.aspx" />
@@ -104,7 +106,9 @@
     <Content Include="Page_Method.aspx" />
     <Content Include="Page_method_try.aspx" />
     <Content Include="pngwing.com.png" />
+    <Content Include="popupWindow.aspx" />
     <Content Include="task_1.aspx" />
+    <Content Include="update_panel.aspx" />
     <Content Include="validation.js" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
@@ -113,6 +117,7 @@
     <Content Include="Student.asmx" />
     <Content Include="WebForm6.aspx" />
     <Content Include="date_time_validation.aspx" />
+    <Content Include="Callback.aspx" />
     <Content Include="WebService2.asmx" />
     <Content Include="Web_method.aspx" />
     <Content Include="Webmethod_demo.aspx" />
@@ -153,6 +158,13 @@
     </Compile>
     <Compile Include="Page_method_try.aspx.designer.cs">
       <DependentUpon>Page_method_try.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popupWindow.aspx.cs">
+      <DependentUpon>popupWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popupWindow.aspx.designer.cs">
+      <DependentUpon>popupWindow.aspx</DependentUpon>
     </Compile>
     <Compile Include="student.cs" />
     <Compile Include="grid_manual_paging.aspx.cs">
@@ -237,6 +249,13 @@
     <Compile Include="task_1.aspx.designer.cs">
       <DependentUpon>task_1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="update_panel.aspx.cs">
+      <DependentUpon>update_panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update_panel.aspx.designer.cs">
+      <DependentUpon>update_panel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm6.aspx.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -250,6 +269,13 @@
     </Compile>
     <Compile Include="date_time_validation.aspx.designer.cs">
       <DependentUpon>date_time_validation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Callback.aspx.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Callback.aspx.designer.cs">
+      <DependentUpon>Callback.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService2.asmx.cs">
       <DependentUpon>WebService2.asmx</DependentUpon>
