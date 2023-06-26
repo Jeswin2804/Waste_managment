@@ -66,13 +66,10 @@
     </script>
     </asp:Content>
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-   
+    <h1>This dropDown Bind via PageMethod</h1>
         <div>
             <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" onchange="getData()" AutoPostBack="false" runat="server"></asp:DropDownList>
             <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" runat="server"></asp:DropDownList>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-
         </div>
 
 

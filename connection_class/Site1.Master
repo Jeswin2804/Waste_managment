@@ -50,7 +50,7 @@
         <div class="panel-container">
         </div>
         <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Left" CssClass="panel menu">
-           
+
 
             <asp:Menu runat="server">
                 <Items>
@@ -59,18 +59,28 @@
                     <asp:MenuItem NavigateUrl="~/Grid_Search.aspx" Text="grid search" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/html_table_data.aspx" Text="HTMl table" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/js_registration_validation.aspx" Text="js registration validation" Selectable="true"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/login.aspx" Text="login" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/JqueryValidation.aspx" Text="jQuery" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/WebForm6.aspx" Text="WEB Method (SRIPT MANAGER)" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Web_method.aspx" Text="WEB Method web Services" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Page_Method.aspx" Text="Page Method " Selectable="true"></asp:MenuItem>
-                   <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/cascading _dropDown.aspx" Text="Cascading DropDown" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/iframe.aspx" Text="iframe" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/date_time_validation.aspx" Text="date validation" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/AutoCompleteTextBox.aspx" Text="Auto suggestion" Selectable="true"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/update_panel.aspx" Text="Update Panel" Selectable="true"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/Callback.aspx" Text="Callback" Selectable="true"></asp:MenuItem>
-                     <asp:MenuItem NavigateUrl="~/popupWindow.aspx" Text="popup-window" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/AutoCompleteTextBox.aspx" Text="Auto suggestion" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/update_panel.aspx" Text="Update Panel" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Callback.aspx" Text="Callback" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/popupWindow.aspx" Text="popup-window" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/DataTable_to_JSON.aspx" Text="Data table To JSON" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/serialize_deserialise.aspx" Text="JSON Serialization and Deserialization" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/XML_doc_save.aspx" Text="XML Save And Read" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Serialise_Xml.aspx" Text="XML serialize and Deserialise" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/refrence.aspx" Text="Refrences" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/refrences_webserviece.aspx" Text="Web Refrences" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/use_control.aspx" Text="User control" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Query_String.aspx" Text="QUERY STRING" Selectable="true"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Video_Auto_play.aspx" Text="Video upload " Selectable="true"></asp:MenuItem>
+                       <asp:MenuItem NavigateUrl="~/Drill_Down.aspx" Text="Drill Down" Selectable="true"></asp:MenuItem>
+
                 </Items>
                 <StaticSelectedStyle CssClass="active" />
             </asp:Menu>

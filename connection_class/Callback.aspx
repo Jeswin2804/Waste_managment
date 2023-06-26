@@ -13,4 +13,6 @@
     <input id="button1" type="button" value="random" onclick="getValue()" />
     <input id="Textbox1" type="text" />
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+    <h1>This Button Will Refresh The page</h1>
+    <asp:Button ID="Button2" runat="server" Text="Refresh" />
 </asp:Content>

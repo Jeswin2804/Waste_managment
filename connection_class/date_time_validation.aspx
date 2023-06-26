@@ -23,7 +23,7 @@
             if (compDate >= 0) {
                 return true;
             } else {
-                alert("not coorect");
+                alert("INVAILD DATE");
                 return false;
             }
 
@@ -81,12 +81,12 @@
     End date
     <asp:TextBox ID="TextBox2" runat="server" TextMode="Date"></asp:TextBox>
     <asp:Button ID="Button1" OnClientClick=" validate()" runat="server" Text="Button" />
-    <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
+   
     <h1>show password</h1>
      <h2> using css </h2>
     <input type="checkbox" id="myCheck" onclick="showPass()">
     <p id="text" style="display:none">password</p>
-    <h2>using holding mouse</h2>
+    <h2>toggle image button</h2>
    <asp:TextBox ID="txtPassword" TextMode="Password" CssClass="passwordTextBox" runat="server"></asp:TextBox>
 <asp:ImageButton ID="ImageButton1" runat="server" Height="15px" ImageUrl="~/pngwing.com.png" OnClientClick="togglePasswordMode(); return false;" Width="20px" />
 

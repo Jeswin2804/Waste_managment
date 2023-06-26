@@ -43,10 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="details">
+      <HintPath>..\..\study\details\details\bin\Debug\details.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,6 +102,14 @@
     <Content Include="cascading _dropDown.aspx" />
     <Content Include="checked.png" />
     <Content Include="code.jquery.com_jquery-3.7.0.js" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="DataTable_to_JSON.aspx" />
+    <Content Include="Drill_Down.aspx" />
     <Content Include="grid_manual_paging.aspx" />
     <Content Include="Grid_paging.aspx" />
     <Content Include="Grid_Search.aspx" />
@@ -103,24 +119,39 @@
     <Content Include="jquery.validate.js" />
     <Content Include="js_registration_validation.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="NO EXCUSES - Best Motivational Video.mp4" />
     <Content Include="Page_Method.aspx" />
     <Content Include="Page_method_try.aspx" />
     <Content Include="pngwing.com.png" />
     <Content Include="popupWindow.aspx" />
+    <Content Include="Query_String.aspx" />
+    <Content Include="refrence.aspx" />
+    <Content Include="serialize_deserialise.aspx" />
     <Content Include="task_1.aspx" />
     <Content Include="update_panel.aspx" />
     <Content Include="validation.js" />
+    <Content Include="Video_Auto_play.aspx" />
     <Content Include="Web.config" />
     <Content Include="html_table_data.aspx" />
     <Content Include="jQuery.aspx" />
     <Content Include="JqueryValidation.aspx" />
     <Content Include="Student.asmx" />
+    <Content Include="Serialise_Xml.aspx" />
+    <Content Include="refrences_webserviece.aspx" />
+    <Content Include="use_control.aspx" />
+    <Content Include="WebForm14.aspx" />
+    <Content Include="webservieceRefrences.aspx" />
     <Content Include="WebForm6.aspx" />
     <Content Include="date_time_validation.aspx" />
     <Content Include="Callback.aspx" />
+    <Content Include="WebService3.asmx" />
+    <Content Include="UserControl1.ascx" />
+    <Content Include="welcome_page.aspx" />
+    <Content Include="XML_doc_save.aspx" />
     <Content Include="WebService2.asmx" />
     <Content Include="Web_method.aspx" />
     <Content Include="Webmethod_demo.aspx" />
+    <Content Include="xml_dem1.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoCompleteTextBox.aspx.cs">
@@ -137,7 +168,27 @@
     <Compile Include="cascading _dropDown.aspx.designer.cs">
       <DependentUpon>cascading _dropDown.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Drill_Down.aspx.cs">
+      <DependentUpon>Drill_Down.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Drill_Down.aspx.designer.cs">
+      <DependentUpon>Drill_Down.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exeptionLogging.cs" />
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Countries.cs" />
+    <Compile Include="DataTable_to_JSON.aspx.cs">
+      <DependentUpon>DataTable_to_JSON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataTable_to_JSON.aspx.designer.cs">
+      <DependentUpon>DataTable_to_JSON.aspx</DependentUpon>
+    </Compile>
     <Compile Include="iframe.aspx.cs">
       <DependentUpon>iframe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +216,27 @@
     </Compile>
     <Compile Include="popupWindow.aspx.designer.cs">
       <DependentUpon>popupWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Query_String.aspx.cs">
+      <DependentUpon>Query_String.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Query_String.aspx.designer.cs">
+      <DependentUpon>Query_String.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="refrence.aspx.cs">
+      <DependentUpon>refrence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refrence.aspx.designer.cs">
+      <DependentUpon>refrence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="serialize_deserialise.aspx.cs">
+      <DependentUpon>serialize_deserialise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="serialize_deserialise.aspx.designer.cs">
+      <DependentUpon>serialize_deserialise.aspx</DependentUpon>
     </Compile>
     <Compile Include="student.cs" />
     <Compile Include="grid_manual_paging.aspx.cs">
@@ -256,6 +328,48 @@
     <Compile Include="update_panel.aspx.designer.cs">
       <DependentUpon>update_panel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Serialise_Xml.aspx.cs">
+      <DependentUpon>Serialise_Xml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Serialise_Xml.aspx.designer.cs">
+      <DependentUpon>Serialise_Xml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="refrences_webserviece.aspx.cs">
+      <DependentUpon>refrences_webserviece.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="refrences_webserviece.aspx.designer.cs">
+      <DependentUpon>refrences_webserviece.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="use_control.aspx.cs">
+      <DependentUpon>use_control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="use_control.aspx.designer.cs">
+      <DependentUpon>use_control.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Video_Auto_play.aspx.cs">
+      <DependentUpon>Video_Auto_play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Video_Auto_play.aspx.designer.cs">
+      <DependentUpon>Video_Auto_play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm14.aspx.cs">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm14.aspx.designer.cs">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webservieceRefrences.aspx.cs">
+      <DependentUpon>webservieceRefrences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webservieceRefrences.aspx.designer.cs">
+      <DependentUpon>webservieceRefrences.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm6.aspx.cs">
       <DependentUpon>WebForm6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -277,6 +391,31 @@
     <Compile Include="Callback.aspx.designer.cs">
       <DependentUpon>Callback.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebService3.asmx.cs">
+      <DependentUpon>WebService3.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl1.ascx.cs">
+      <DependentUpon>UserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl1.ascx.designer.cs">
+      <DependentUpon>UserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome_page.aspx.cs">
+      <DependentUpon>welcome_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome_page.aspx.designer.cs">
+      <DependentUpon>welcome_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XML_doc_save.aspx.cs">
+      <DependentUpon>XML_doc_save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XML_doc_save.aspx.designer.cs">
+      <DependentUpon>XML_doc_save.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebService2.asmx.cs">
       <DependentUpon>WebService2.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -297,6 +436,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\WebService3.wsdl" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
@@ -305,6 +445,15 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

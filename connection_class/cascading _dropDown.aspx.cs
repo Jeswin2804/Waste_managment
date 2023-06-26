@@ -72,5 +72,10 @@ namespace connection_class
         {
 
         }
+
+        protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Label1.Text = "Your are Selected " + DropDownList3.SelectedItem.ToString();
+        }
     }
 }

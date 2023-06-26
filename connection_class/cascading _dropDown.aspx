@@ -6,6 +6,8 @@
 
     <asp:DropDownList ID="DropDownList2" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" runat="server" AutoPostBack="True"></asp:DropDownList>
 
-    <asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList>
+    <asp:DropDownList ID="DropDownList3" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" runat="server" AutoPostBack="true"></asp:DropDownList>
+
+    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 
 </asp:Content>

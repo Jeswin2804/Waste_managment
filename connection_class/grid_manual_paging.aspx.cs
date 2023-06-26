@@ -57,7 +57,7 @@ namespace connection_class
         }
         private void addingButton()
         {
-            for (int i = 0; i < _totalcount; i++)
+            for (int i = 0; i < 20; i++)
             {
                 Button btn = new Button();
                 btn.Text = (i + 1).ToString();

@@ -27,7 +27,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <h1>This Dropdown Bind Via Web Method</h1>
  <asp:DropDownList ID="ddlCustomers" runat="server">
 </asp:DropDownList>
 

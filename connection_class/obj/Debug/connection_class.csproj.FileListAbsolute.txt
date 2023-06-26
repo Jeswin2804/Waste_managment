@@ -127,3 +127,7 @@ D:\Waste_management\connection_class\bin\System.Web.Razor.xml
 D:\Waste_management\connection_class\bin\System.Web.WebPages.xml
 D:\Waste_management\connection_class\bin\System.Web.WebPages.Deployment.xml
 D:\Waste_management\connection_class\bin\System.Web.WebPages.Razor.xml
+D:\Waste_management\connection_class\bin\Newtonsoft.Json.dll
+D:\Waste_management\connection_class\bin\Newtonsoft.Json.xml
+D:\Waste_management\connection_class\bin\details.dll
+D:\Waste_management\connection_class\bin\details.pdb
