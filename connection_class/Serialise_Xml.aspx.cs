@@ -18,30 +18,65 @@ namespace connection_class
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            detais newdet = new detais()
+            try
             {
-                name = "jeswin",
-                description = "dev",
-                id = 1
-            };
-            XmlSerializer serObj = new XmlSerializer(typeof(detais));
-            StreamWriter newWrit = new StreamWriter(@"D:\\Waste_management\newxml.xml");
-            serObj.Serialize(newWrit, newdet);
-            newWrit.Close();    
+                string directoryPath = Server.MapPath("~/Waste_management");
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                detais newdet = new detais()
+                {
+                    name = TextBox1.Text,
+                    description = TextBox2.Text,
+                    id = int.Parse(TextBox3.Text)
+                };
+
+                XmlSerializer serObj = new XmlSerializer(typeof(detais));
+                string xmlFilePath = Path.Combine(directoryPath, "newxml.xml");
+                using (StreamWriter newWrit = new StreamWriter(xmlFilePath))
+                {
+                    serObj.Serialize(newWrit, newdet);
+                }
+
+                string xmlCont = File.ReadAllText(xmlFilePath);
+                xmlCont = Server.HtmlEncode(xmlCont); // change to xml Struct
+                xmlCont = "<pre>" + xmlCont + "</pre>"; 
+                XmlLiteral.Text = xmlCont;
+            }
+            catch (Exception ex)
+            {
+              
+            }
         }
+
+
+
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            XmlSerializer serObj = new XmlSerializer(typeof(detais));
-            StreamReader rdr = new StreamReader(@"D:\\Waste_management\newxml.xml");
-            detais bckdet = (detais)serObj.Deserialize(rdr);
-            TextBox1.Text = bckdet.id.ToString();
-            TextBox2.Text = bckdet.name.ToString();
-            TextBox3.Text = bckdet.description.ToString();
-
+            string xmlFilePath = Server.MapPath("~/Waste_management/newxml.xml");
+            if (File.Exists(xmlFilePath))
+            {
+                XmlSerializer serObj = new XmlSerializer(typeof(detais));
+                using (StreamReader rdr = new StreamReader(xmlFilePath))
+                {
+                    detais bckdet = (detais)serObj.Deserialize(rdr);
+                    TextBox1.Text = bckdet.id.ToString();
+                    TextBox2.Text = bckdet.name.ToString();
+                    TextBox3.Text = bckdet.description.ToString();
+                }
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "AlertScript", "File invalid", true);
+            }
         }
+
+
     }
-    public  class detais
+    public class detais
     {
         public string name { get; set; }
         public string description { get; set; }

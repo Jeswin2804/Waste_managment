@@ -7,16 +7,21 @@
          }
          let getCallbackResult = (results) => {
              if (Object.keys(results).length===0) {
-                 alert("hey i m here");
+                 alert("No Data");
              } else {
-                 document.getElementById("Text2").value = results["Name"];
-                 document.getElementById("Text3").value = results["Gender"];
-                 document.getElementById("Text4").value = results["TotalMarks"];
+                 var lab1 = document.getElementById("Text2");
+                 var lab2 = document.getElementById("Text3");
+                 var lab3 = document.getElementById("Text4"); 
+                 lab1.textContent = results["Name"];
+                 lab2.textContent = results["Gender"];
+                 lab3.textContent=   results["TotalMarks"];
+
              }
          }
          let getCallbackError = (err) => {
              alert(err);
          }
+//student.asmx
      </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -26,14 +31,13 @@
         </Services>
     </asp:ScriptManager>
     <br />
-    <h1>Enter a the ID The Textbox will AutoFill</h1>
+    <h1>Enter a the ID </h1>
     ID: <input id="Text1" type="text" />
           <input id="Button1" type="button" value="button" onclick="getStudentById()"/>
         <br />
-    Name: <input id="Text2" type="text" />
+    Name: <label id="Text2" />
         <br />
-    Gender: <input id="Text3" type="text" />
-        <br />
-    Total Marks :<input id="Text4" type="text" />
+
         <br />
 </asp:Content>
+

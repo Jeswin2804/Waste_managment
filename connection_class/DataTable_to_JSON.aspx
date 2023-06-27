@@ -59,7 +59,7 @@
     <h1>Method 2: Using JavaScriptSerializer</h1>
     <div id="outputText1" class="output1">
     </div>
-    <h1>Method 3: Using nuget Json.Net DLL (Newtonsoft).</h1>
+    <h1>Method 3: Using nuget Json.Net DLL (Newtonsoft).</h1> 
     <div id="outputText2" class="output1">
     </div>
     <h1>This is from another page by using Cookie </h1>
@@ -68,4 +68,6 @@
     <h1>This Data From SQL In JSON Format</h1>
      <div id="outputText4" class="output1">
     </div>
+    <br />
+    <asp:Button ID="Button1" runat="server" Text="SESSION" OnClick="Button1_Click" />
 </asp:Content>

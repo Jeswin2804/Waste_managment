@@ -37,6 +37,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <div class="ui-widget">
+       <h1>Auto suggestion</h1>
   <label for="tags">Tags: </label>
   <input id="tags">
 </div>

@@ -125,5 +125,11 @@ namespace connection_class
             string json = cmd.ExecuteScalar().ToString();
             return json;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["JsonData"] = datafromJson();
+            Response.Redirect("~/demoForSession.aspx");
+        }
     }
 }

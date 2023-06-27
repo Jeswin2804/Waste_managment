@@ -20,8 +20,14 @@
                         dataType: "json",
                         success: function (response) {
                             console.log(response.d);
-                            document.cookie = "cookieName=" + response.d;
-                           // window.location.href = "DataTable_to_JSON.aspx";
+                            var lab = document.getElementById("label2");
+                            if (lab) {
+                                lab.innerText = JSON.stringify(response.d);
+                                document.cookie = "cookieName=" + JSON.stringify(response.d);
+                            } else {
+                                console.log("Label element not found");
+                            }
+                            // window.location.href = "DataTable_to_JSON.aspx";
                         },
                         error: function (error) {
                             console.log(error.responseText);
@@ -54,7 +60,7 @@
     <div id="output">
         <div id="data">
         </div>
-        <h4> <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h4>
-
+        <h1>JSON</h1>
+        <h4> <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h4>
 </div>
 </asp:Content>

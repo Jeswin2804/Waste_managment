@@ -74,7 +74,7 @@
                     <asp:MenuItem NavigateUrl="~/serialize_deserialise.aspx" Text="JSON Serialization and Deserialization" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/XML_doc_save.aspx" Text="XML Save And Read" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Serialise_Xml.aspx" Text="XML serialize and Deserialise" Selectable="true"></asp:MenuItem>
-                    <asp:MenuItem NavigateUrl="~/refrence.aspx" Text="Refrences" Selectable="true"></asp:MenuItem>
+               <%--     <asp:MenuItem NavigateUrl="~/refrence.aspx" Text="Refrences" Selectable="true"></asp:MenuItem>--%>
                     <asp:MenuItem NavigateUrl="~/refrences_webserviece.aspx" Text="Web Refrences" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/use_control.aspx" Text="User control" Selectable="true"></asp:MenuItem>
                     <asp:MenuItem NavigateUrl="~/Query_String.aspx" Text="QUERY STRING" Selectable="true"></asp:MenuItem>

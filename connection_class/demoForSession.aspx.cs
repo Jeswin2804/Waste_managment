@@ -7,17 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace connection_class
 {
-    public partial class Query_String : System.Web.UI.Page
+    public partial class demoForSession : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label1.Text = Session["jsonData"].ToString();
+
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //Response.Redirect("~/welcome_page.aspx?first=" + TextBox1.Text + "&last=" + TextBox2.Text);
-
+            Response.Redirect("~/DataTable_to_JSON.aspx");
         }
     }
 }

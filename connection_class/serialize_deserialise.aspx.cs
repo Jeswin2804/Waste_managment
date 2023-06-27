@@ -22,7 +22,8 @@ namespace connection_class
             HttpCookie cookie = Request.Cookies["cookieName"];
             if (cookie != null)
             {
-                Label1.Text +="this data from another page using cookie in c#"; 
+                Label1.Text +="this data from another page using cookie in c#";
+                Label1.Text += "</br>";
                 Label1.Text += cookie.Value + "</br>";
                
             }
