@@ -11,6 +11,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
+
 namespace connection_class
 {
     public partial class Drill_Down : System.Web.UI.Page
@@ -21,6 +22,7 @@ namespace connection_class
 
             if (!IsPostBack)
             {
+                System.Diagnostics.Debug.WriteLine("This is a log");
                 string con = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;
                 using (SqlConnection _con = new SqlConnection(con))
                 {
@@ -42,7 +44,7 @@ namespace connection_class
                         {
                             for (int i = 0; i < totalCount; i++)
                             {
-                                table.Append("<tr><th onclick='cellClicked(this)' colspan='1'>");
+                                table.Append("<tr><th onclick='cellClicked(this)' colspan='3'>");
                                 table.Append(rd[i].ToString());
                                 table.Append("</tr></th>");
                             }
@@ -56,7 +58,7 @@ namespace connection_class
             }
         }
 
-        [WebMethod]
+[WebMethod]
         public static List<string> addvalues(string input)
         {
             string _con = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;

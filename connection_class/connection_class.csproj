@@ -126,6 +126,7 @@
     <Content Include="pngwing.com.png" />
     <Content Include="popupWindow.aspx" />
     <Content Include="Query_String.aspx" />
+    <Content Include="recursive_function.aspx" />
     <Content Include="refrence.aspx" />
     <Content Include="serialize_deserialise.aspx" />
     <Content Include="task_1.aspx" />
@@ -231,6 +232,13 @@
     </Compile>
     <Compile Include="Query_String.aspx.designer.cs">
       <DependentUpon>Query_String.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="recursive_function.aspx.cs">
+      <DependentUpon>recursive_function.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recursive_function.aspx.designer.cs">
+      <DependentUpon>recursive_function.aspx</DependentUpon>
     </Compile>
     <Compile Include="refrence.aspx.cs">
       <DependentUpon>refrence.aspx</DependentUpon>
