@@ -81,7 +81,7 @@
                     <asp:MenuItem NavigateUrl="~/Video_Auto_play.aspx" Text="Video upload " Selectable="true"></asp:MenuItem>
                        <asp:MenuItem NavigateUrl="~/Drill_Down.aspx" Text="Drill Down" Selectable="true"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/recursive_function.aspx" Text="Recursive function call" Selectable="true"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/recursive_function_call_1.aspx" Text="Recursive function call 1" Selectable="true"></asp:MenuItem>
+                     <%--   <asp:MenuItem NavigateUrl="~/recursive_function_call_1.aspx" Text="Recursive function call 1" Selectable="true"></asp:MenuItem>--%>
 
                 </Items>
                 <StaticSelectedStyle CssClass="active" />

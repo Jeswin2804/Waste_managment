@@ -60,7 +60,6 @@ namespace connection_class
         {
             if (reader.Read())
             {
-                
                 string ancestorName = reader["p"].ToString();
                 TreeNode node = new TreeNode(ancestorName);
                 parentNode.ChildNodes.Add(node);
