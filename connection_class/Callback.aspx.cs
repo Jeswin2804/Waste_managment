@@ -19,6 +19,7 @@ namespace connection_class
             string script = "function useCallback(args, context) { " + callbackRef + " }";
             Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "useCallback", script, true);
         }
+        //call back using page
 
         public void RaiseCallbackEvent(string eventArgument)
         {

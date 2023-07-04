@@ -10,11 +10,7 @@
                  alert("No Data");
              } else {
                  var lab1 = document.getElementById("Text2");
-                 var lab2 = document.getElementById("Text3");
-                 var lab3 = document.getElementById("Text4"); 
                  lab1.textContent = results["Name"];
-                 lab2.textContent = results["Gender"];
-                 lab3.textContent=   results["TotalMarks"];
 
              }
          }

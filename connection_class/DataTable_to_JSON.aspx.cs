@@ -47,6 +47,7 @@ namespace connection_class
             ad.Fill(dt);
             return dt;
         }
+        //lambda exxpression to pass a functiot to anothor function
         public static string JSONData(Func<DataTable> dt)
         {
             DataTable _dt = dt();
@@ -120,7 +121,7 @@ namespace connection_class
             string _con = ConfigurationManager.ConnectionStrings["localConnection1"].ConnectionString;
             SqlConnection con = new SqlConnection(_con);
             con.Open();
-            SqlCommand cmd = new SqlCommand("spSelectAllDataInJSON", con);
+            SqlCommand cmd = new SqlCommand("spSelectAllDataInJSON", con);//FOR JSON AUTO
             cmd.CommandType = CommandType.StoredProcedure;
             string json = cmd.ExecuteScalar().ToString();
             return json;

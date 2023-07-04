@@ -97,6 +97,12 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .tableclass{
+            margin-left: 200px;
+             margin-top: 200px;
+        }
+    </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script>
@@ -104,10 +110,6 @@
             $.validator.addMethod("stromgPassword", function (value, element) {
                 return $('')
             })
-
-            
-
-
             $("#form1").validate({
                 rules: {
                     name: {
@@ -147,20 +149,22 @@
     </script>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
-    <div id="">
-          Name:
-        <input type="text" id="name" name="name" />
-        <br />
-        Email:
-        <input type="email" id="email" name="email" />
-        <br />
-        Password:
-         <input type="Password" id="Password" name="Password" />
-        <br />
-        Confirm Password
-           <input type="password" id="re_password" name="re_password" />
-        <br />
-        <input type="submit" value="Submit" />
-    </div>
-
+    <table class="tableclass">
+        <tr>
+          <td>Name:</td>
+           <td><input type="text" id="name" name="name" /></td> 
+        </tr>
+         <tr>
+             <td>Email:</td>
+       <td> <input type="email" id="email" name="email" /></td>
+      </tr>
+       <tr>
+         <td>Password:</td> 
+         <td> <input type="Password" id="Password" name="Password" /></td>
+       </tr>
+        <tr >
+           
+        <td colspan="2"><center> <br /><input type="submit" value="Submit" /></center> </td> 
+        </tr>
+        </table>
 </asp:Content>

@@ -119,6 +119,7 @@
     <Content Include="jquery-2.2.4.js" />
     <Content Include="jquery.validate.js" />
     <Content Include="js_registration_validation.aspx" />
+    <Content Include="LINQ.aspx" />
     <Content Include="login.aspx" />
     <Content Include="NO EXCUSES - Best Motivational Video.mp4" />
     <Content Include="Page_Method.aspx" />
@@ -205,6 +206,13 @@
     </Compile>
     <Compile Include="iframe.aspx.designer.cs">
       <DependentUpon>iframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LINQ.aspx.cs">
+      <DependentUpon>LINQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LINQ.aspx.designer.cs">
+      <DependentUpon>LINQ.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page_Method.aspx.cs">
       <DependentUpon>Page_Method.aspx</DependentUpon>

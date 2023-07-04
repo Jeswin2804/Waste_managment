@@ -30,7 +30,7 @@
                         }
                     });
                 },
-                minLength: 3
+                minLength: 3//auto sug after three letter
             });
         });
     </script>

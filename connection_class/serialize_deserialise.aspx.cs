@@ -34,7 +34,7 @@ namespace connection_class
             Details det1 = new Details
             {
                 id = 1,
-                name = "sunapi",
+                name = "abin2",
                 job = "nill"
             };
 
