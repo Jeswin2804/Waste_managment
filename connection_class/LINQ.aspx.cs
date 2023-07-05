@@ -50,7 +50,7 @@ namespace connection_class
 				get { return number; }
 				set { number = value; }
 			}
-
+			
 		}
 		customer[] _customers = new customer[]
 		{
