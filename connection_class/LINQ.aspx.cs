@@ -59,6 +59,7 @@ namespace connection_class
 		new customer {Name = "jeswin" ,Id = 1 , number=98479542}
 		};
 		public IEnumerable<customer> getAllcustomer()
+
 		{
 			return _customers;
 		}
